@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>끄적끄적 · b1ink301</title>
+  <meta name="description" content="b1ink301(끄적끄적)이 만든 Android 앱 — Mocl: 커뮤니티 눈팅 앱">
+  <style>
+    :root {
+      --bg: #FBFAF9; --surface: #FFFFFF; --ink: #181A1F; --sub: #8B8F98;
+      --line: #EDEAE5; --accent: #E8552D; --accent-weak: #FCEBE5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121316; --surface: #1B1D22; --ink: #ECECEE; --sub: #8E929C;
+        --line: #26282E; --accent: #FF7A57; --accent-weak: #2A211D;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Noto Sans KR", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 56px 20px 40px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    .lead { color: var(--sub); margin: 0 0 40px; }
+    h2 { font-size: 13px; font-weight: 600; color: var(--sub); letter-spacing: .04em; margin: 0 0 12px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 16px; padding: 20px; margin-bottom: 32px;
+    }
+    .app { display: flex; gap: 16px; align-items: center; }
+    .icon {
+      flex: none; width: 56px; height: 56px; border-radius: 14px;
+      background: var(--accent); color: #fff; font-size: 30px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .app h3 { margin: 0; font-size: 18px; }
+    .app p { margin: 2px 0 0; color: var(--sub); font-size: 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    a.btn {
+      display: inline-block; padding: 8px 14px; border-radius: 999px;
+      font-size: 14px; text-decoration: none;
+      background: var(--accent-weak); color: var(--accent); font-weight: 600;
+    }
+    ul.plain { list-style: none; padding: 0; margin: 0; }
+    ul.plain li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    ul.plain li:last-child { border-bottom: none; }
+    a { color: var(--accent); }
+    footer { color: var(--sub); font-size: 13px; text-align: center; padding: 24px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>끄적끄적</h1>
+    <p class="lead">b1ink301 이 만드는 Android 앱</p>
+
+    <h2>앱</h2>
+    <section class="card">
+      <div class="app">
+        <div class="icon" aria-hidden="true">m</div>
+        <div>
+          <h3>Mocl - 커뮤니티 눈팅 앱</h3>
+          <p>여러 커뮤니티의 게시판을 한곳에서 가볍게 둘러보는 앱</p>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=kr.b1ink.mocl">Google Play</a>
+        <a class="btn" href="https://github.com/b1ink301/mocl_flutter">GitHub</a>
+      </div>
+    </section>
+
+    <h2>정보</h2>
+    <section class="card">
+      <ul class="plain">
+        <li><a href="/b1ink301.html">개인정보처리방침</a></li>
+        <li>문의: <a href="mailto:b1ink301.dev@gmail.com">b1ink301.dev@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <footer>© b1ink301</footer>
+  </main>
+</body>
+</html>
