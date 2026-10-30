@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>b1ink301 · Apps</title>
+  <meta name="description" content="Apps by b1ink301, a multiplatform Android · iOS · Flutter developer — Mocl: a community browsing app, ScriptWidget: JavaScript home screen widgets">
+  <link rel="alternate" hreflang="ko" href="https://b1ink301.github.io/">
+  <link rel="alternate" hreflang="en" href="https://b1ink301.github.io/en/">
+  <style>
+    :root {
+      --bg: #FBFAF9; --surface: #FFFFFF; --ink: #181A1F; --sub: #8B8F98;
+      --line: #EDEAE5; --accent: #E8552D; --accent-weak: #FCEBE5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121316; --surface: #1B1D22; --ink: #ECECEE; --sub: #8E929C;
+        --line: #26282E; --accent: #FF7A57; --accent-weak: #2A211D;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 56px 20px 40px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    .lead { color: var(--sub); margin: 0 0 40px; }
+    h2 { font-size: 13px; font-weight: 600; color: var(--sub); letter-spacing: .04em; margin: 0 0 12px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 16px; padding: 20px; margin-bottom: 32px;
+    }
+    .app { display: flex; gap: 16px; align-items: center; }
+    .icon {
+      flex: none; width: 56px; height: 56px; border-radius: 14px;
+      background: var(--accent); color: #fff; font-size: 30px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .icon.alt { background: #3B6FE0; font-size: 22px; }
+    .app h3 { margin: 0; font-size: 18px; }
+    .app p { margin: 2px 0 0; color: var(--sub); font-size: 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    a.btn {
+      display: inline-block; padding: 8px 14px; border-radius: 999px;
+      font-size: 14px; text-decoration: none;
+      background: var(--accent-weak); color: var(--accent); font-weight: 600;
+    }
+    ul.plain { list-style: none; padding: 0; margin: 0; }
+    ul.plain li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    ul.plain li:last-child { border-bottom: none; }
+    a { color: var(--accent); }
+    .about p { margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .tag {
+      padding: 4px 10px; border-radius: 999px; font-size: 13px;
+      border: 1px solid var(--line); color: var(--sub);
+    }
+    .lang { position: absolute; top: 20px; right: 20px; font-size: 14px; }
+    .lang a { text-decoration: none; }
+    footer { color: var(--sub); font-size: 13px; text-align: center; padding: 24px 0; }
+  </style>
+</head>
+<body>
+  <nav class="lang"><a href="/" hreflang="ko" lang="ko">한국어</a> · <strong>English</strong></nav>
+  <main>
+    <h1>b1ink301</h1>
+    <p class="lead">Multiplatform app developer</p>
+
+    <h2>ABOUT</h2>
+    <section class="card about">
+      <p>I build apps for Android, iOS and Flutter.
+        Combining the polish of native with the productivity of Flutter, I make apps that are light and easy to use.</p>
+      <div class="tags">
+        <span class="tag">Android</span>
+        <span class="tag">iOS</span>
+        <span class="tag">Flutter</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">Swift</span>
+        <span class="tag">Dart</span>
+      </div>
+    </section>
+
+    <h2>APPS</h2>
+    <section class="card">
+      <div class="app">
+        <div class="icon" aria-hidden="true">m</div>
+        <div>
+          <h3>Mocl - Community Browser</h3>
+          <p>Browse boards from multiple Korean communities in one lightweight app</p>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=kr.b1ink.mocl">Google Play</a>
+        <a class="btn" href="https://github.com/b1ink301/mocl_flutter">GitHub</a>
+      </div>
+    </section>
+    <section class="card">
+      <div class="app">
+        <div class="icon alt" aria-hidden="true">{ }</div>
+        <div>
+          <h3>ScriptWidget</h3>
+          <p>Build Android home screen widgets in JavaScript, like Scriptable on iOS</p>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://github.com/b1ink301/ScriptWidget/releases">Download (GitHub Releases)</a>
+        <a class="btn" href="https://github.com/b1ink301/ScriptWidget">GitHub</a>
+      </div>
+    </section>
+
+    <h2>INFO</h2>
+    <section class="card">
+      <ul class="plain">
+        <li><a href="/mocl/privacy.html" hreflang="ko">Mocl Privacy Policy</a> (Korean)</li>
+        <li>Contact: <a href="mailto:b1ink301.dev@gmail.com">b1ink301.dev@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <footer>© b1ink301</footer>
+  </main>
+</body>
+</html>

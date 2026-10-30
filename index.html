@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>끄적끄적 · b1ink301</title>
-  <meta name="description" content="Android · iOS · Flutter 멀티플랫폼 개발자 b1ink301(끄적끄적)의 앱 — Mocl: 커뮤니티 눈팅 앱">
+  <meta name="description" content="Android · iOS · Flutter 멀티플랫폼 개발자 b1ink301(끄적끄적)의 앱 — Mocl: 커뮤니티 눈팅 앱, ScriptWidget: JavaScript 홈 화면 위젯">
+  <link rel="alternate" hreflang="ko" href="https://b1ink301.github.io/">
+  <link rel="alternate" hreflang="en" href="https://b1ink301.github.io/en/">
   <style>
     :root {
       --bg: #FBFAF9; --surface: #FFFFFF; --ink: #181A1F; --sub: #8B8F98;
@@ -37,6 +39,7 @@
       background: var(--accent); color: #fff; font-size: 30px; font-weight: 700;
       display: flex; align-items: center; justify-content: center;
     }
+    .icon.alt { background: #3B6FE0; font-size: 22px; }
     .app h3 { margin: 0; font-size: 18px; }
     .app p { margin: 2px 0 0; color: var(--sub); font-size: 14px; }
     .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
@@ -55,10 +58,13 @@
       padding: 4px 10px; border-radius: 999px; font-size: 13px;
       border: 1px solid var(--line); color: var(--sub);
     }
+    .lang { position: absolute; top: 20px; right: 20px; font-size: 14px; }
+    .lang a { text-decoration: none; }
     footer { color: var(--sub); font-size: 13px; text-align: center; padding: 24px 0; }
   </style>
 </head>
 <body>
+  <nav class="lang"><strong>한국어</strong> · <a href="/en/" hreflang="en" lang="en">English</a></nav>
   <main>
     <h1>끄적끄적</h1>
     <p class="lead">b1ink301 · 멀티플랫폼 앱 개발자</p>
@@ -91,11 +97,24 @@
         <a class="btn" href="https://github.com/b1ink301/mocl_flutter">GitHub</a>
       </div>
     </section>
+    <section class="card">
+      <div class="app">
+        <div class="icon alt" aria-hidden="true">{ }</div>
+        <div>
+          <h3>ScriptWidget</h3>
+          <p>iOS Scriptable 처럼 JavaScript 로 안드로이드 홈 화면 위젯을 만드는 앱</p>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://github.com/b1ink301/ScriptWidget/releases">다운로드 (GitHub 릴리스)</a>
+        <a class="btn" href="https://github.com/b1ink301/ScriptWidget">GitHub</a>
+      </div>
+    </section>
 
     <h2>정보</h2>
     <section class="card">
       <ul class="plain">
-        <li><a href="/mocl/privacy.html">개인정보처리방침</a></li>
+        <li><a href="/mocl/privacy.html">Mocl 개인정보처리방침</a></li>
         <li>문의: <a href="mailto:b1ink301.dev@gmail.com">b1ink301.dev@gmail.com</a></li>
       </ul>
     </section>
